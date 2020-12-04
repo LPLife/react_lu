@@ -1,5 +1,5 @@
 import './App.less';
-import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import { BrowserRouter, Route } from 'react-router-dom'
 import routes from './route/index';
 
 function App() {

@@ -22,16 +22,18 @@ const codeSplit = files => {
     });
 };
 const Index = codeSplit('index');
+const Form = codeSplit('form');
+
 const routes = [
-    {
-        path: `/`,
-        component: Index,
-        belong: 'index'
-    },
     {
         path: `/index`,
         component: Index,
         belong: 'index'
+    },
+    {
+        path: `/form`,
+        component: Form,
+        belong: 'Form'
     }
 ];
 
