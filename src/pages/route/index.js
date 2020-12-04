@@ -1,20 +1,17 @@
 import Loadable from 'react-loadable';
 
-const MyLoadingComponent = ({ isLoading, error }) => {
+const MyLoadingComponent = ({isLoading, error}) => {
     // Handle the loading state
     if (isLoading) {
         return <div>Loading...</div>;
-    }
-    // Handle the error state
-    else if (error) {
+    } else if (error) {
         return <div>Sorry, there was a problem loading the page.</div>;
     }
-    else {
-        return null;
-    }
+
+    return null;
 };
 
-const codeSplit = files => {
+const codeSplit = (files) => {
     return Loadable({
         loader: () => import(`../${files}/index`),
         loading: MyLoadingComponent,
@@ -26,12 +23,12 @@ const Form = codeSplit('form');
 
 const routes = [
     {
-        path: `/index`,
+        path: '/index',
         component: Index,
         belong: 'index'
     },
     {
-        path: `/form`,
+        path: '/form',
         component: Form,
         belong: 'Form'
     }

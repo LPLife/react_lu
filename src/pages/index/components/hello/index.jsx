@@ -1,14 +1,12 @@
-import React, {Component} from 'react';
+import React from 'react';
 
-class Hello extends Component {
-    render() {
-
-        return (
-            <div className='from-page'>
-            问候组件
-            </div>
-        );
-    }
-}
+const Hello = (props) => {
+    return (
+        <div className='from-page'>
+            父组件传递过来的值count： {props.count}
+            <button onClick={props.handleClick}>修改父组件传过来的count</button>
+        </div>
+    );
+};
 
 export default Hello;

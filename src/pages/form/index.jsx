@@ -1,14 +1,11 @@
-import React, {Component} from 'react';
-
-class Form extends Component {
-    render() {
-
-        return (
-            <div className='from-page'>
-            表单页面
-            </div>
-        );
-    }
-}
+import React from 'react';
+const Form = (props) => {
+    return (
+        <div className='form-page'>
+            ss
+            <div></div>
+        </div>
+    );
+};
 
 export default Form;
