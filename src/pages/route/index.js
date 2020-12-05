@@ -23,7 +23,7 @@ const Form = codeSplit('form');
 
 const routes = [
     {
-        path: '/index',
+        path: '',
         component: Index,
         belong: 'index'
     },
