@@ -1,5 +1,6 @@
 import React from 'react';
 import './index.less';
+
 const Hello = (props) => {
     return (
         <div className='hello-page'>
