@@ -1,127 +1,127 @@
-{
-    "root": true,
-    "parser": "babel-eslint",
-    "plugins": [
-        "import",
-        "jsx-a11y",
-        "react",
-        "react-hooks",
-        "prettier"
-    ],
-    "env": {
-        "browser": true,
-        "es6": true
-    },
-    "parserOptions": {
-        "ecmaVersion": 2018,
-        "sourceType": "module",
-        "ecmaFeatures": {
-            "jsx": true
-        }
-    },
-    "settings": {
-        "react": {
-            "version": "detect"
-        }
-    },
-    "extends": [
-        "plugin:prettier/recommended"
-    ],
-    "rules": {
-        //https://eslint.org/docs/rules/
-        "indent": [
-            "warn",
-            4,
-            {
-                "ignoredNodes": [
-                    "TemplateLiteral",
-                    "ConditionalExpression"
-                ],
-                "SwitchCase": 1,
-                "ObjectExpression": 1,
-                "ignoreComments": true
-            }
-        ],
-        "semi": [
-            "warn",
-            "always"
-        ],
-        "no-else-return": "warn",
-        "quotes": [
-            "warn",
-            "single"
-        ],
-        "multiline-ternary": "off",
-        "brace-style": [
-            "warn",
-            "1tbs",
-            {
-                "allowSingleLine": true
-            }
-        ],
-        "no-unused-vars": [
-            "warn",
-            {
-                "args": "none",
-                "ignoreRestSiblings": true
-            }
-        ],
-        "no-unused-labels": "warn",
-        "no-use-before-define": [
-            "warn",
-            {
-                "functions": false,
-                "classes": false,
-                "variables": false
-            }
-        ],
-        "arrow-parens": [
-            "warn",
-            "always"
-        ],
-        "array-bracket-newline": [
-            "warn",
-            {
-                "multiline": true
-            }
-        ],
-        "key-spacing": [
-            "warn",
-            {
-                "beforeColon": false,
-                "afterColon": true
-            }
-        ],
-        // "multiline-ternary": ["error", "always-multiline"],
-        "template-curly-spacing": "off",
-        "object-curly-spacing": [
-            "warn",
-            "never"
-        ],
-        "array-bracket-spacing": [
-            "warn",
-            "never"
-        ],
-        // https://github.com/benmosher/eslint-plugin-import/tree/master/docs/rules
-        "import/first": "error",
-        //https://github.com/yannickcr/eslint-plugin-react
-        "react/jsx-uses-react": "warn",
-        "react/jsx-uses-vars": "warn",
-        "react/no-unused-state": "warn",
-        "react/no-typos": "error",
-        "react/no-string-refs": "warn",
-        "react/jsx-no-duplicate-props": "warn",
-        "react/no-direct-mutation-state": "warn",
-        "react/style-prop-object": "warn",
-        "react/require-render-return": "error",
-        "react/jsx-pascal-case": [
-            "warn",
-            {
-                "allowAllCaps": true,
-                "ignore": []
-            }
-        ],
-        // https://github.com/facebook/react/tree/master/packages/eslint-plugin-react-hooks
-        "react-hooks/rules-of-hooks": "error"
-    }
-}
+// {
+//     "root": true,
+//     "parser": "babel-eslint",
+//     "plugins": [
+//         "import",
+//         "jsx-a11y",
+//         "react",
+//         "react-hooks",
+//         "prettier"
+//     ],
+//     "env": {
+//         "browser": true,
+//         "es6": true
+//     },
+//     "parserOptions": {
+//         "ecmaVersion": 2018,
+//         "sourceType": "module",
+//         "ecmaFeatures": {
+//             "jsx": true
+//         }
+//     },
+//     "settings": {
+//         "react": {
+//             "version": "detect"
+//         }
+//     },
+//     "extends": [
+//         "plugin:prettier/recommended"
+//     ],
+//     "rules": {
+//         //https://eslint.org/docs/rules/
+//         "indent": [
+//             "warn",
+//             4,
+//             {
+//                 "ignoredNodes": [
+//                     "TemplateLiteral",
+//                     "ConditionalExpression"
+//                 ],
+//                 "SwitchCase": 1,
+//                 "ObjectExpression": 1,
+//                 "ignoreComments": true
+//             }
+//         ],
+//         "semi": [
+//             "warn",
+//             "always"
+//         ],
+//         "no-else-return": "warn",
+//         "quotes": [
+//             "warn",
+//             "single"
+//         ],
+//         "multiline-ternary": "off",
+//         "brace-style": [
+//             "warn",
+//             "1tbs",
+//             {
+//                 "allowSingleLine": true
+//             }
+//         ],
+//         "no-unused-vars": [
+//             "warn",
+//             {
+//                 "args": "none",
+//                 "ignoreRestSiblings": true
+//             }
+//         ],
+//         "no-unused-labels": "warn",
+//         "no-use-before-define": [
+//             "warn",
+//             {
+//                 "functions": false,
+//                 "classes": false,
+//                 "variables": false
+//             }
+//         ],
+//         "arrow-parens": [
+//             "warn",
+//             "always"
+//         ],
+//         "array-bracket-newline": [
+//             "warn",
+//             {
+//                 "multiline": true
+//             }
+//         ],
+//         "key-spacing": [
+//             "warn",
+//             {
+//                 "beforeColon": false,
+//                 "afterColon": true
+//             }
+//         ],
+//         // "multiline-ternary": ["error", "always-multiline"],
+//         // "template-curly-spacing": "off",
+//         "object-curly-spacing": [
+//             "warn",
+//             "never"
+//         ],
+//         "array-bracket-spacing": [
+//             "warn",
+//             "never"
+//         ],
+//         // https://github.com/benmosher/eslint-plugin-import/tree/master/docs/rules
+//         "import/first": "error",
+//         //https://github.com/yannickcr/eslint-plugin-react
+//         "react/jsx-uses-react": "warn",
+//         "react/jsx-uses-vars": "warn",
+//         "react/no-unused-state": "warn",
+//         "react/no-typos": "error",
+//         "react/no-string-refs": "warn",
+//         "react/jsx-no-duplicate-props": "warn",
+//         "react/no-direct-mutation-state": "warn",
+//         "react/style-prop-object": "warn",
+//         "react/require-render-return": "error",
+//         "react/jsx-pascal-case": [
+//             "warn",
+//             {
+//                 "allowAllCaps": true,
+//                 "ignore": []
+//             }
+//         ],
+//         // https://github.com/facebook/react/tree/master/packages/eslint-plugin-react-hooks
+//         "react-hooks/rules-of-hooks": "error"
+//     }
+// }

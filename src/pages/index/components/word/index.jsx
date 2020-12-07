@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-
+import './index.less';
 const Word = () => {
     let [name, setName] = useState('名字为空'),
         handleClick = () => {
