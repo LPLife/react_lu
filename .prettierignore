@@ -24,3 +24,4 @@ public/*
 **/*.ejs
 **/*.min.js
 **/*.min.css
+config/

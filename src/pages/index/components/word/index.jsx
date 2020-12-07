@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-const Word = (props) => {
+const Word = () => {
     let [name, setName] = useState('名字为空'),
         handleClick = () => {
             setName('liming');

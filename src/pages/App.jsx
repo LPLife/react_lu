@@ -7,11 +7,7 @@ function App() {
         <div className='App'>
             <BrowserRouter>
                 {routes.map((route, i) => (
-                    <Route
-                        key={i}
-                        path={route.path}
-                        render={(props) => <route.component {...props} />}
-                    />
+                    <Route key={i} path={route.path} render={(props) => <route.component {...props} />} />
                 ))}
             </BrowserRouter>
         </div>

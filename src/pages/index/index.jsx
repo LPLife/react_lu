@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import Hello from './components/hello';
 import Word from './components/word';
 
-const Index = (props) => {
+const Index = () => {
     let [count, setCount] = useState(0),
         handleClick = () => {
             setCount(count + 1);

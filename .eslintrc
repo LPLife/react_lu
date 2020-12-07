@@ -1,7 +1,13 @@
 {
     "root": true,
     "parser": "babel-eslint",
-    "plugins": ["import", "jsx-a11y", "react", "react-hooks", "prettier"],
+    "plugins": [
+        "import",
+        "jsx-a11y",
+        "react",
+        "react-hooks",
+        "prettier"
+    ],
     "env": {
         "browser": true,
         "es6": true
@@ -18,22 +24,33 @@
             "version": "detect"
         }
     },
-    "extends": ["plugin:prettier/recommended"],
+    "extends": [
+        "plugin:prettier/recommended"
+    ],
     "rules": {
         //https://eslint.org/docs/rules/
         "indent": [
             "warn",
             4,
             {
-                "ignoredNodes": ["TemplateLiteral", "ConditionalExpression"],
+                "ignoredNodes": [
+                    "TemplateLiteral",
+                    "ConditionalExpression"
+                ],
                 "SwitchCase": 1,
                 "ObjectExpression": 1,
                 "ignoreComments": true
             }
         ],
-        "semi": ["warn", "always"],
+        "semi": [
+            "warn",
+            "always"
+        ],
         "no-else-return": "warn",
-        "quotes": ["warn", "single"],
+        "quotes": [
+            "warn",
+            "single"
+        ],
         "multiline-ternary": "off",
         "brace-style": [
             "warn",
@@ -58,8 +75,16 @@
                 "variables": false
             }
         ],
-        "arrow-parens": ["warn", "always"],
-        "array-bracket-newline": ["warn", {"multiline": true}],
+        "arrow-parens": [
+            "warn",
+            "always"
+        ],
+        "array-bracket-newline": [
+            "warn",
+            {
+                "multiline": true
+            }
+        ],
         "key-spacing": [
             "warn",
             {
@@ -69,8 +94,14 @@
         ],
         // "multiline-ternary": ["error", "always-multiline"],
         "template-curly-spacing": "off",
-        "object-curly-spacing": ["warn", "never"],
-        "array-bracket-spacing": ["warn", "never"],
+        "object-curly-spacing": [
+            "warn",
+            "never"
+        ],
+        "array-bracket-spacing": [
+            "warn",
+            "never"
+        ],
         // https://github.com/benmosher/eslint-plugin-import/tree/master/docs/rules
         "import/first": "error",
         //https://github.com/yannickcr/eslint-plugin-react

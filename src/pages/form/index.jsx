@@ -1,5 +1,5 @@
 import React from 'react';
-const Form = (props) => {
+const Form = () => {
     return (
         <div className='form-page'>
             ss
