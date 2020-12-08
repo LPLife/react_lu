@@ -11,20 +11,21 @@ const Index = () => {
         },
         //使用 ref 去存储 DOM 节点的引用
         myRef = useRef(),
+        h5Ref = useRef(),
         clicktoTest = () => {
+            console.log(h5Ref,'ddd')
             console.log(myRef.current.innerHTML); // => hello word
         };
     return (
-        <ThemeContext.Provider 
+        <ThemeContext.Provider
         value={{
             username: 'superawesome',
         }}
         >
         <div className='index-page'>
             父组件index
-
                 <Hello  handleClick={handleClick} count={count}></Hello>
-                <Word></Word>
+                <Word ref={h5Ref}></Word>
             <div ref={myRef} onClick={clicktoTest}>
                 hello word
             </div>
