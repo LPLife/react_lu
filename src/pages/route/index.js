@@ -20,10 +20,11 @@ const codeSplit = (files) => {
 };
 const Index = codeSplit('index');
 const Form = codeSplit('form');
+const Test = codeSplit('test');
 
 const routes = [
     {
-        path: '',
+        path: '/index',
         component: Index,
         belong: 'index'
     },
@@ -31,6 +32,11 @@ const routes = [
         path: '/form',
         component: Form,
         belong: 'Form'
+    },
+    {
+        path: '/test',
+        component: Test,
+        belong: 'Test'
     }
 ];
 
