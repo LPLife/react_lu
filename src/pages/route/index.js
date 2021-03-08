@@ -13,7 +13,7 @@ const MyLoadingComponent = ({isLoading, error}) => {
 
 const codeSplit = (files) => {
     return Loadable({
-        loader: () => import(`../${files}/index`),
+        loader: () => import(`../${files}`),
         loading: MyLoadingComponent,
         delay: 300
     });
